@@ -233,7 +233,7 @@ class _AcceptedOrdersState extends State<AcceptedOrders> {
                                         style: FontStyles.regularStyle(
                                           fontSize: 16,
                                           fontFamily: 'Montserrat',
-                                          color: Color(0xff646974),
+                                          color: const Color(0xff646974),
                                         ),
                                       ),
                                       const SizedBox(
@@ -243,14 +243,38 @@ class _AcceptedOrdersState extends State<AcceptedOrders> {
                                         accepted.acceptedOrders[index]
                                                 .productTotalSum
                                                 .toString() +
-                                            '(${accepted.acceptedOrders[index].deliveryPrice}' +
-                                            'sum'.tr +
-                                            ')',
+                                            'sum'.tr,
                                         style: FontStyles.regularStyle(
                                           fontSize: 16,
                                           fontFamily: 'Montserrat',
                                           color: Colors.black,
                                         ),
+                                      ),
+                                    ],
+                                  ),
+                                  const Divider(
+                                    thickness: 1,
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'deliveryPrice'.tr +
+                                            ' ' +
+                                            accepted.acceptedOrders[index]
+                                                .deliveryPrice
+                                                .toString() +
+                                            'sum'.tr,
+                                        style: FontStyles.regularStyle(
+                                          fontSize: 16,
+                                          fontFamily: 'Montserrat',
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        width: 5,
                                       ),
                                     ],
                                   ),

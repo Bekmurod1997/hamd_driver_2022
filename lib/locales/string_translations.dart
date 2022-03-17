@@ -76,6 +76,8 @@ class StringTranslations extends Translations {
           'thereIsNotOrderYet': 'Buyurtmalar mavjud emas',
           'noAcceptedOrderYet': 'Siz xali buyurtma qabul qilmadingiz',
           'pleaseAddPlasticCard': 'Iltimos karta qo\'shing',
+          'driverOnWay': 'Haydovchi yo\'lda',
+          'verifiyNumber': 'Tasdiqlash',
         },
         'ru_RU': {
           'hello': 'Hallo Welt',
@@ -150,6 +152,8 @@ class StringTranslations extends Translations {
           'thereIsNotOrderYet': 'Заказов нет',
           'noAcceptedOrderYet': 'Вы еще не приняли заказ',
           'pleaseAddPlasticCard': 'Пожалуйста, добавьте карту',
+          'driverOnWay': 'Водитель в пути',
+          'verifiyNumber': 'подтверждать',
         }
       };
 }

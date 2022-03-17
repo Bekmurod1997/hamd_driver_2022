@@ -187,10 +187,7 @@ class AllOrdersScreen extends StatelessWidget {
                                             allOrders.allOrders[index]
                                                 .productTotalSum
                                                 .toString() +
-                                            'sum'.tr +
-                                            ' (${allOrders.allOrders[index].deliveryPrice}' +
-                                            'sum'.tr +
-                                            ')',
+                                            'sum'.tr,
                                         style: FontStyles.regularStyle(
                                           fontSize: 16,
                                           fontFamily: 'Montserrat',
@@ -202,6 +199,33 @@ class AllOrdersScreen extends StatelessWidget {
                                       ),
                                     ],
                                   ),
+                                  const Divider(
+                                    thickness: 1,
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'deliveryPrice'.tr +
+                                            ' ' +
+                                            allOrders
+                                                .allOrders[index].deliveryPrice
+                                                .toString() +
+                                            'sum'.tr,
+                                        style: FontStyles.regularStyle(
+                                          fontSize: 16,
+                                          fontFamily: 'Montserrat',
+                                          color: const Color(0xff646974),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        width: 5,
+                                      ),
+                                    ],
+                                  ),
+
                                   const SizedBox(
                                     height: 5,
                                   ),

@@ -277,7 +277,7 @@ class AllServices {
                             print(e);
                           }
                         },
-                        child: Text('verify'),
+                        child: Text('verifiyNumber'.tr),
                       )
                     ],
                   ),
@@ -379,8 +379,8 @@ class AllServices {
       );
       if (response.statusCode == 200) {
         Get.snackbar(
-          "",
-          "",
+          'driverOnWay'.tr,
+          'driverOnWay'.tr,
           icon: const Icon(Icons.person, color: Colors.white),
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: Colors.green,
